@@ -1,0 +1,161 @@
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: #f0772b;
+}
+
+header {
+	background-color: #ffddaa;
+	color: #351704;
+	display: flex;
+	padding: 24px 11px;	
+	align-items: center;
+}
+.menu-topo {
+	display: flex;
+
+}
+header li {
+	list-style: none;
+	margin-left: 24px;
+}
+header li a {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 14.4px;
+	text-decoration: none;
+	color: #351704;
+}
+#logo {
+	font-size: 20.8px;
+}
+#pesquisa-header {
+	border-radius: 10px;
+	border: #f0772b solid 1px; 
+	padding: 6px 0px;
+}
+
+/*Body*/
+
+.centro-body {
+	text-align: center;
+	flex-direction: column;
+	height: 350px;
+	margin-top: 48px;
+	position: relative;
+}
+.centro-body span {
+
+	margin-top: 30px; 
+	font-size: 25.6px;
+	color: #843909;
+	font-family: 'Roboto', sans-serif;
+}
+.centro-body button {
+	box-shadow: none;
+	margin-top: 30px; 
+	font-size: 19.2px;
+	border: none;
+	border-radius: 4px;
+	padding: 12px 25px;
+	background-color: #843909;
+	color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+}
+#imgcamisa {
+	position: absolute;
+	left: 16px;
+	margin-top: -48px;
+	top: 16px;
+}
+
+.div-conteudo {
+
+	background-color: #ffffff;
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 100px;
+	color: #843909;
+	justify-content: space-around;
+	overflow: visible;
+	padding: 25px 0;
+	border-radius: 10px;
+}
+
+.conteudo {
+	margin-left: 20px;
+	font-family: 'Roboto';
+}
+.conteudo h3 {
+	font-size: 19px;
+}
+
+.conteudo p {
+	font-size: 16px;
+}
+
+.footer {
+	
+	text-align: center;
+	margin: 35px auto;
+	width: 45%;
+}
+.footer button {
+	background-color: #eeeeee;
+	border: none;
+	padding: 15px 0;
+	color: #843909;
+	font-size: 16px;
+	border-radius: 5px;
+	width: 83%;
+}
+.footer p {
+	font-size: 16px;
+	color: #843909;
+	padding: 25px 0;
+}
+#menu-topo {
+	display: none;
+}
+.menu-topo-mobile {
+	display: none;
+}
+/*Responsividade*/
+@media (max-width: 800px) {
+	#imgcamisa {
+		display: none;
+	}
+	#menu-topo {
+
+		font-size: 18px;
+		margin-left: 50px;
+		display: initial;
+	}
+	.menu-topo {
+		display: none;
+	}
+	.menu-topo-mobile{
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 70px;
+		left: 370px;
+		z-index: 1;
+		background-color: #ffddaa;
+		padding-bottom: 10px;
+		padding-right: 20px;
+		text-align: center;
+		border-radius: 6px;
+	}
+	.menu-topo-mobile li {
+		margin-top: 10px;
+		
+	}
+
+
+	.div-conteudo {
+		flex-direction: column;
+	}
+}
